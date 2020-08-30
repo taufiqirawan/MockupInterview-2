@@ -8,6 +8,18 @@ class Presenter {
         }
     }
 
-    fun
+    fun getWinner(selisihPlayer : Int, selisihComputer : Int, nama : String) : String{
+        return when {
+            selisihPlayer < selisihComputer -> {
+                "$nama Win"
+            }
+            selisihComputer < selisihPlayer -> {
+                "Computer Win"
+            }
+            else -> {
+                "Draw"
+            }
+        }
+    }
 
 }
